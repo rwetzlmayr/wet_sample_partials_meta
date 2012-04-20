@@ -12,7 +12,7 @@ class wet_sample_partials_meta
  */
 function wet_sample_partials_meta_fix($event, $step, &$rs, &$partials)
 {
-	$partials['title'] = array ('html' => PARTIAL_VOLATILE, 'selector' => 'p.title');
+	$partials['title'] = array ('mode' => PARTIAL_VOLATILE, 'selector' => 'p.title');
 }
 
 if (txpinterface == 'admin') new wet_sample_partials_meta;
